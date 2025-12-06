@@ -1,0 +1,8 @@
+
+This project contains automated UI and API tests for the website automationintesting.online, written with Playwright and TypeScript. The UI tests cover the booking process, including valid bookings, invalid input, and unavailable dates. The API tests cover creating, editing, and deleting rooms, as well as creating bookings through public and admin endpoints.
+
+The project structure is simple: UI tests are located in tests/ui, API tests are in tests/api, and there is a small helper for admin authentication. All tests were fixed, stabilized, and now pass successfully.
+
+To run the project, install dependencies with npm install. Run all tests using npx playwright test. To run only UI or API tests, use npx playwright test ui or npx playwright test api.
+
+The project is organized in a way that makes it easy to maintain and extend with additional scenarios in the future.

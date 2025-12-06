@@ -1,0 +1,95 @@
+Test Cases (Manual Testing)
+
+
+1) Admin: Create room with valid data
+________________________________________________________________________________________________
+Precondition: logged in as admin/password.
+Steps:
+1. Go to Rooms → Add Room.
+2. Enter room number (e.g. 101), type, price, description.
+3. Save.
+Expected result:
+- Room appears in the list and later visible for booking on user side.
+
+________________________________________________________________________________________________
+2)   Create room with invalid data
+
+Steps:
+1. Open Add Room form.
+2. Try to save it with empty required fields OR incorrect data.
+Expected:
+- Validation errors should appear and the room is not created.
+
+________________________________________________________________________________________________
+3)   Book room with correct data
+
+Precondition: at least one room exists.
+Steps:
+1. Open user page.
+2. Select any available room.
+3. Pick future check-in and check-out dates (check-out after check-in).
+4. Fill Name, Email, Phone.
+5. Submit booking.
+Expected:
+- Booking is accepted and confirmation message is shown.
+
+________________________________________________________________________________________________
+4) Booking with wrong data
+
+Steps:
+1. Select room.
+2. Choose check-out date earlier than check-in.
+3. Try to submit.
+Expected:
+- System shows date error and booking is not created.
+
+
+________________________________________________________________________________________________
+5)  Booking with wrong data
+
+Steps:
+1. Select room.
+2. Choose normal dates.
+3. Leave at least one required field empty.
+4. Submit.
+Expected:
+- Validation message appears. Booking doesn’t go through.
+
+________________________________________________________________________________________________
+6)  Booked dates appear as unavailable
+
+Precondition: the room already has a booking.
+Steps:
+1. Open room calendar.
+2. Find dates that were already booked previously.
+Expected:
+- These dates are marked as unavailable, cannot be selected.
+
+________________________________________________________________________________________________
+7)  Attempt to book unavailable dates
+
+Steps:
+1. Select room.
+2. Try picking already-booked dates or overlapping range.
+3. Try to submit.
+Expected:
+- Booking is blocked, user gets a message that dates are unavailable.
+
+
+________________________________________________________________________________________________
+8)  Calendar: Past dates
+
+Steps:
+1. Open date picker.
+2. Try selecting any past date.
+Expected:
+- Past dates should be disabled or unclickable.
+
+________________________________________________________________________________________________
+9)  Booking form UI
+
+Steps:
+1. Open any room.
+2. Check that input fields and button are visible.
+Expected:
+- All elements needed for booking are displayed and usable.

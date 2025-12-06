@@ -1,0 +1,10 @@
+.idea
+node_modules
+.gitignore
+
+# Playwright
+/test-results/
+/playwright-report/
+/blob-report/
+/playwright/.cache/
+/playwright/.auth/

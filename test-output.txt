@@ -1,0 +1,6 @@
+
+> aqa-inforce-Hupalo-Dima@1.0.0 test
+> playwright tests
+
+error: unknown command 'tests'
+(Did you mean test?)
