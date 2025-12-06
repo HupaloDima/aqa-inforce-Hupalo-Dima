@@ -8,7 +8,6 @@ To run the project:
 3. UI only: `npx playwright test ui`
 4. API only: `npx playwright test api`
 
-
 Note: according to the task description, API tests should cover admin flows (create, edit, delete room via admin API). At the moment the admin login endpoint returns 404, so I implemented:
 - a positive public rooms API check;
 - negative API tests that verify unauthorized users cannot create, edit or delete rooms.
